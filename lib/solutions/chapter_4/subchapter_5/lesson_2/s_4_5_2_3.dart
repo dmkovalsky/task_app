@@ -28,7 +28,6 @@ class _MyNameWidgetState extends State<MyNameWidget> {
               setState(() {
                 myTextContent = 'Dmitry';
               });
-              ;
             },
             child: Text('Name anzeigen')),
       ],
