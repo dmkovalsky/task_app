@@ -1,8 +1,26 @@
 import 'package:flutter/material.dart';
 
 int countVowels(String input) {
+  int result = 0;
+
+  for (int i = 0; i < input.length; i++) {
+    switch (input[i].toLowerCase()) {
+      case 'a':
+      case 'e':
+      case 'i':
+      case 'o':
+      case 'u':
+      case 'ä':
+      case 'ü':
+      case 'ö':
+        result++;
+      default:
+      //result = result + 0; unnötig eigentlich
+    }
+  }
+
   // Lösung hier einfügen
-  throw UnimplementedError();
+  return result;
 }
 
 class S3384 extends StatefulWidget {
