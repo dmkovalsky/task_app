@@ -28,8 +28,8 @@ class _ShowHideNameWidgetState extends State<ShowHideNameWidget> {
         Text(name),
         ElevatedButton(
             onPressed: () {
-              isChanged = !isChanged;
               setState(() {
+                isChanged = !isChanged;
                 if (isChanged == true) {
                   name = 'Dmitry';
                   buttonValue = 'Name verstecken';
